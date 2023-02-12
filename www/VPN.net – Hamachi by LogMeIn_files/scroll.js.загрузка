@@ -1,0 +1,20 @@
+$('a[href^=#]').click(function (e) {
+    e.preventDefault();
+    var tar = $(this).attr('href');
+    var pos = $(tar).offset().top
+    $('html, body').animate({ scrollTop: pos - 88 }, 1000);
+});
+
+// catch initial hashmark
+if (window.location.hash != '') {
+    var pos = $(window.location.hash).offset().top
+    $('html, body').animate({ scrollTop: pos - 88 }, 1000);
+}
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > $(window).height() - 100) {
+        $('#fixed-header').addClass('open');
+    } else {
+        $('#fixed-header').removeClass('open');
+    }
+});

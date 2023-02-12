@@ -1,0 +1,24 @@
+body {
+    background-color: #505050;
+}
+.header {
+    background-color: #5a6268;
+    height: 30px;
+    color: white;
+}
+.test {
+    border: 1px solid red;
+}
+.menu {
+    justify-content: space-around;
+    display: flex;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text {
+    color: #fff;
+}
+a {
+    color: #00ffee;
+}
